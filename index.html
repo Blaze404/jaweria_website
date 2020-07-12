@@ -101,8 +101,8 @@
                                                 <li><a href="about.html">about</a></li>
                                             </ul>
                                         </li> -->
-                                        <li><a href="#">Addesss</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a class="addressbutton" href="#">Addesss</a></li>
+                                        <li><a href="#" id="contactusbutton">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -110,7 +110,7 @@
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="Appointment">
                                 <div class="book_btn d-none d-lg-block">
-                                    <a class="" href="">Show Address</a>
+                                    <a class="addressbutton" href="">Show Address</a>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +339,7 @@
 
 
       <!-- Emergency_contact start -->
-      <div class="Emergency_contact">
+      <div class="Emergency_contact" id="contactus">
             <div class="conatiner-fluid p-0">
                 <div class="row no-gutters">
                     <div class="col-xl-6">
@@ -370,7 +370,7 @@
         <!-- Emergency_contact end -->
  <br>
     <!-- ADDRESS SECTION -->
-    <div class="container-fluid" style="text-align: center">
+    <div class="container-fluid" style="text-align: center" id="address">
         <div class="row">
                 <div class="col-xl-12">
                         <div class="section_title text-center mb-55">
@@ -506,7 +506,7 @@
                             </div>
                         </div>
                         <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
-                            <div class="footer_widget">
+                            <!-- <div class="footer_widget">
                                 <h3 class="footer_title">
                                         Departments
                                 </h3>
@@ -518,7 +518,7 @@
                                     <li><a href="#">Dental</a></li>
                                 </ul>
     
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-xl-2 col-md-6 col-lg-2">
                             <div class="footer_widget">
@@ -526,11 +526,11 @@
                                         Useful Links
                                 </h3>
                                 <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a class="addressbutton" href="#">Address</a></li>
                                     <li><a href="#"> Contact</a></li>
-                                    <li><a href="#"> Appointment</a></li>
+                                    <!-- <li><a href="#"> Appointment</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -630,6 +630,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({position: uluru, map: map});
         }
+
+
+        // Scrolling 
+        $("#contactusbutton").click(function(e) {
+				e.preventDefault();
+					$([document.documentElement, document.body]).animate({
+						scrollTop: $("#contactus").offset().top -40
+					}, 1000);
+		});
+        $(".addressbutton").click(function(e) {
+				e.preventDefault();
+					$([document.documentElement, document.body]).animate({
+						scrollTop: $("#address").offset().top - 70
+					}, 1000);
+		});
+
+
     </script>
 
 </body>
