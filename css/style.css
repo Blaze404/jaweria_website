@@ -1277,6 +1277,10 @@ h3 {
     font-size: 33px;
     letter-spacing: 3px;
   }
+  .slider_area .single_slider .slider_text h1 span {
+    font-size: 33px;
+    letter-spacing: 3px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1284,12 +1288,20 @@ h3 {
   .slider_area .single_slider .slider_text h1 {
     font-size: 30px;
   }
+  .slider_area .single_slider .slider_text h1 span {
+    font-size: 33px;
+    letter-spacing: 3px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 17, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h1 {
     font-size: 35px;
+    letter-spacing: 3px;
+  }
+  .slider_area .single_slider .slider_text h1 span {
+    font-size: 33px;
     letter-spacing: 3px;
   }
 }
