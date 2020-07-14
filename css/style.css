@@ -2471,7 +2471,7 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
 .breadcam_bg {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(../img/banner/banner.png);
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
@@ -6264,6 +6264,10 @@ h6 {
 .blog_part .single-home-blog .card ul li span {
   margin-right: 10px;
   font-size: 12px;
+}
+
+.text-center{
+  
 }
 
 /*# sourceMappingURL=style.css.map */
